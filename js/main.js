@@ -1,5 +1,4 @@
 
-
 //Typing animation plugin
 var typed = new Typed('.element', {
     strings: [
@@ -13,4 +12,18 @@ var typed = new Typed('.element', {
 
   });
 
-  //Jquery Smooth Scroll
+
+
+  var mainLogo = document.getElementsByClassName('main-logo')[0];
+
+  mainLogo.addEventListener('click', () => {
+
+
+    mainLogo.classList.add("shake");
+
+
+  })
+
+
+
+

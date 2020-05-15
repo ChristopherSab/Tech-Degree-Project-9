@@ -9,15 +9,24 @@
     --five: rgba(64,43,109, 0.3);
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none !important;
+    color: white !important;
 }
 
 /*--------------*/
 /* Button Styles*/
 /*--------------*/
 
-button.a {
+.btn a {
+    color: #708090 !important;
+}
+
+.btn a:hover {
     color: white !important;
 }
 
@@ -91,16 +100,16 @@ button.a {
 
  .svg-inline--fa {
      width: 25px;
-     color: var(--two);
+     color: var(--one);
      transition: .2s ease-in-out 0.1s;
      margin-top: auto !important;
+     margin-right: 0.5rem;
  }
 
  
 
  .svg-inline--fa:hover {
-    transform: scale(1.1);
-    color: var(--one);
+    transform: scale(1.2);
  }
 
  .my-5 {
@@ -127,7 +136,7 @@ button.a {
 
   .modal-header,
   .modal-footer {
-      background-color: var(--five);
+      background-color: var(--two);
       color: white;
   }
 
@@ -150,23 +159,50 @@ button.a {
   }
 
   .modal-close-btn:hover {
-      background-color: darkgray !important;
+      background-color: var(--four) !important;
   }
 
   .modal-live-view {
-      background-color: var(--one);
+      background-color: var(--one) !important;
       border: none !important;
       transition: .2s ease-in-out !important;
       color: white !important;
   }
 
   .modal-live-view:hover {
-    background-color: var(--two);
+    background-color: #ADDE59 !important;
     color: white;
   }
 
 
+.btn-sm {
+    border: 1px solid lightgray;
+    padding: 0.4rem !important;
+    transition: .2s ease-in-out !important;
+    color: #708090;
+}
 
+.btn-sm:hover {
+    background-color: var(--two);
+    color: white;
+}
+
+
+
+    .shake {
+        transition: 0.3s ease-in-out;
+    }
+
+    .shake:hover {
+        animation: shake 0.3s ease-in-out;
+        transform: scale(1.2);
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
  
 
   
