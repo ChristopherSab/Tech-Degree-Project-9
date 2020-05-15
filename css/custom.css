@@ -1,0 +1,180 @@
+/*------------*/
+/* Base Styles*/
+/*------------*/
+:root {
+    --one: rgba(192,248,98);
+    --two:rgba(16,166,144);
+    --three: rgba(17,102,163, 0.5);
+    --four: rgba(61,73,135, 0.8);
+    --five: rgba(64,43,109, 0.3);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*--------------*/
+/* Button Styles*/
+/*--------------*/
+
+button.a {
+    color: white !important;
+}
+
+.nav-link {
+    background-color: var(--two) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: var(--two) !important;
+    color: white !important;
+    border: none !important;
+    transition: .2s ease-in-out !important;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: var(--one) !important;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.modal-content li {
+    list-style: none;
+}
+
+.btn-secondary {
+    background-color: var(--one);
+    border: none !important;
+}
+
+.active {
+    background-color: var(--one) !important;
+}
+
+.close {
+    color: white !important;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.modal-content {
+    border: none !important;
+    border-radius: 0.5rem !important;
+}
+
+  #profile-photo {
+    width: 125px;
+    border-radius: 50%;
+    display: block;
+    margin: .5rem auto !important;
+}
+
+.modal-git-icon {
+    margin-right: auto !important;
+}
+
+.skills-icons {
+    padding-top: auto !important;
+}
+
+ .svg-inline--fa {
+     width: 25px;
+     color: var(--two);
+     transition: .2s ease-in-out 0.1s;
+     margin-top: auto !important;
+ }
+
+ 
+
+ .svg-inline--fa:hover {
+    transform: scale(1.1);
+    color: var(--one);
+ }
+
+ .my-5 {
+    margin-top: 7rem !important;
+    margin-bottom: 7rem !important;
+  }
+
+  .about-btn {
+      width: 250px;
+      height: 50px;
+  }
+
+  .card {
+    color: white;
+}
+
+
+  .bg-card-1,
+  .bg-card-2,
+  .bg-card-3 {
+      background-color: var(--four);
+  }
+
+
+  .modal-header,
+  .modal-footer {
+      background-color: var(--five);
+      color: white;
+  }
+
+  .modal-skills, 
+  .modal-grade,
+  .modal-comments {
+    border-top: 1px solid lightgray;
+    padding-top: 1rem !important;
+  }
+
+  .modal-comments p {
+    font-style: italic;
+  }
+
+  .modal-close-btn {
+      color: white;
+      background-color: var(--three);
+      border: none !important;
+      transition: .2s ease-in-out !important;
+  }
+
+  .modal-close-btn:hover {
+      background-color: darkgray !important;
+  }
+
+  .modal-live-view {
+      background-color: var(--one);
+      border: none !important;
+      transition: .2s ease-in-out !important;
+      color: white !important;
+  }
+
+  .modal-live-view:hover {
+    background-color: var(--two);
+    color: white;
+  }
+
+
+
+ 
+
+  
+
+
+
+
+
+
+
+
