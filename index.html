@@ -298,7 +298,7 @@
                     <h2 class="section-heading text-uppercase pb-4">Contact Me</h2>
                 </div>
                 <form id="contactForm" method="post" name="contact_form"
-                data-netlify="true">
+                data-netlify="true" data-netlify-recaptcha="true">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -330,6 +330,7 @@
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
+                        <div data-netlify-recaptcha="true"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" value="Submit" type="submit">Send
                             Message</button>
                     </div>
