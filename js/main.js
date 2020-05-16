@@ -1,3 +1,6 @@
+/*----------------*/
+/* Main JavaScript*/
+/*----------------*/
 
 //Typing animation plugin
 var typed = new Typed('.element', {
@@ -12,17 +15,14 @@ var typed = new Typed('.element', {
 
   });
 
+//Shake Effect For Site Logo
+  let mainLogo = document.getElementsByClassName('main-logo')[0];
 
-
-  var mainLogo = document.getElementsByClassName('main-logo')[0];
-
-  mainLogo.addEventListener('click', () => {
-
+mainLogo.addEventListener('click', () => {
 
     mainLogo.classList.add("shake");
 
-
-  })
+})
 
 
 

@@ -1,12 +1,12 @@
 /*------------*/
 /* Base Styles*/
 /*------------*/
+/*Peacock Color Palette I Used: https://www.color-hex.com/color-palette/11109*/
 :root {
-    --one: rgba(192,248,98);
-    --two:rgba(16,166,144);
-    --three: rgba(17,102,163, 0.5);
-    --four: rgba(61,73,135, 0.8);
-    --five: rgba(64,43,109, 0.3);
+    --color-primary:rgba(16,166,144);
+    --color-secondary: rgba(192,248,98);
+    --color-tertiary: rgba(61,73,135, 0.8);
+    --color-button-close: rgba(17,102,163, 0.5);
 }
 
 * {
@@ -15,12 +15,57 @@
 
 a {
     text-decoration: none !important;
+} 
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*-------------------*/
+/* Navigations Styles*/
+/*-------------------*/
+.nav-link:hover,
+.nav-link:active,
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: var(--color-secondary) !important;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    background-color: var(--color-primary) !important;
+    border: none !important;
     color: white !important;
+}
+
+.active {
+    background-color: var(--color-secondary) !important;
 }
 
 /*--------------*/
 /* Button Styles*/
 /*--------------*/
+.btn-primary {
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    border: none !important;
+    transition: .2s ease-in-out !important;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border: none !important;
+}
+
+.btn-secondary:hover {
+    background-color: #ADDE59;
+}
 
 .btn a {
     color: #708090 !important;
@@ -30,179 +75,140 @@ a {
     color: white !important;
 }
 
-.nav-link {
-    background-color: var(--two) !important;
-    border: none !important;
-    color: white !important;
+.about-btn {
+    width: 250px;
+    height: 50px;
 }
 
-.btn-primary {
-    background-color: var(--two) !important;
-    color: white !important;
+.modal-close-btn {
+    color: white;
+    background-color: var(--color-button-close);
     border: none !important;
     transition: .2s ease-in-out !important;
 }
 
-.nav-link:hover,
-.nav-link:active,
-.btn-primary:active,
-.btn-primary:hover {
-    background-color: var(--one) !important;
-    border-color: none !important;
-    box-shadow: none !important;
+.modal-close-btn:hover {
+    background-color: var(--color-tertiary) !important;
 }
 
-.modal-content li {
-    list-style: none;
-}
-
-.btn-secondary {
-    background-color: var(--one);
+.modal-live-view {
+    background-color: var(--color-secondary) !important;
     border: none !important;
+    transition: .2s ease-in-out !important;
+    color: white !important;
 }
 
-.active {
-    background-color: var(--one) !important;
+.modal-live-view:hover {
+  background-color: #ADDE59 !important;
+  color: white;
+}
+
+.btn-sm {
+  border: 1px solid lightgray;
+  padding: 0.4rem !important;
+  transition: .2s ease-in-out !important;
+  color: #708090;
+}
+
+.btn-sm:hover {
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .close {
     color: white !important;
 }
 
-.masthead {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+/*-------------*/
+/* Modal Styles*/
+/*-------------*/
+.modal-header,
+.modal-footer {
+    background-color: var(--color-primary);
+    color: white;
+}
 
 .modal-content {
     border: none !important;
     border-radius: 0.5rem !important;
 }
 
-  #profile-photo {
-    width: 125px;
-    border-radius: 50%;
-    display: block;
-    margin: .5rem auto !important;
+.modal-content li {
+    list-style: none;
+}
+
+.modal-skills, 
+.modal-grade,
+.modal-comments {
+  border-top: 1px solid lightgray;
+  padding-top: 1rem !important;
+}
+
+.modal-comments p {
+  font-style: italic;
 }
 
 .modal-git-icon {
     margin-right: auto !important;
 }
 
-.skills-icons {
-    padding-top: auto !important;
+/*---------------------*/
+/* Images & Icon Styles*/
+/*---------------------*/
+#profile-photo {
+    width: 125px;
+    border-radius: 50%;
+    display: block;
+    margin: .5rem auto !important;
 }
 
- .svg-inline--fa {
-     width: 25px;
-     color: var(--one);
-     transition: .2s ease-in-out 0.1s;
-     margin-top: auto !important;
-     margin-right: 0.5rem;
- }
+.svg-inline--fa {
+    width: 25px;
+    color: var(--color-secondary);
+    transition: .2s ease-in-out 0.1s;
+    margin-top: auto !important;
+    margin-right: 0.5rem;
+}
 
- 
+.svg-inline--fa:hover {
+   transform: scale(1.2);
+}
 
- .svg-inline--fa:hover {
-    transform: scale(1.2);
- }
-
- .my-5 {
+/*--------------------*/
+/* Main Section Styles*/
+/*--------------------*/
+.my-5 {
     margin-top: 7rem !important;
     margin-bottom: 7rem !important;
-  }
+}
 
-  .about-btn {
-      width: 250px;
-      height: 50px;
-  }
-
-  .card {
+.card {
     color: white;
 }
 
-
-  .bg-card-1,
-  .bg-card-2,
-  .bg-card-3 {
-      background-color: var(--four);
-  }
-
-
-  .modal-header,
-  .modal-footer {
-      background-color: var(--two);
-      color: white;
-  }
-
-  .modal-skills, 
-  .modal-grade,
-  .modal-comments {
-    border-top: 1px solid lightgray;
-    padding-top: 1rem !important;
-  }
-
-  .modal-comments p {
-    font-style: italic;
-  }
-
-  .modal-close-btn {
-      color: white;
-      background-color: var(--three);
-      border: none !important;
-      transition: .2s ease-in-out !important;
-  }
-
-  .modal-close-btn:hover {
-      background-color: var(--four) !important;
-  }
-
-  .modal-live-view {
-      background-color: var(--one) !important;
-      border: none !important;
-      transition: .2s ease-in-out !important;
-      color: white !important;
-  }
-
-  .modal-live-view:hover {
-    background-color: #ADDE59 !important;
-    color: white;
-  }
-
-
-.btn-sm {
-    border: 1px solid lightgray;
-    padding: 0.4rem !important;
-    transition: .2s ease-in-out !important;
-    color: #708090;
+.bg-card-1,
+.bg-card-2,
+.bg-card-3 {
+    background-color: var(--color-tertiary);
 }
 
-.btn-sm:hover {
-    background-color: var(--two);
-    color: white;
+/*--------------*/
+/* miscellaneous*/
+/*--------------*/
+.shake {
+    transition: 0.3s ease-in-out;
 }
 
+.shake:hover {
+    animation: shake 0.3s ease-in-out;
+    transform: scale(1.2);
+}
 
-
-    .shake {
-        transition: 0.3s ease-in-out;
-    }
-
-    .shake:hover {
-        animation: shake 0.3s ease-in-out;
-        transform: scale(1.2);
-    }
-
-    @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-      }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
  
 
   
