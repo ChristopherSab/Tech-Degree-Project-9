@@ -17,5 +17,3 @@ var typed = new Typed('.element', {
 
 
 
-
-
