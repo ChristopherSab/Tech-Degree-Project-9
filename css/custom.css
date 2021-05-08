@@ -38,6 +38,10 @@ a {
     box-shadow: none !important;
 }
 
+.navbar-expand-lg .navbar-collapse {
+    padding: 1rem !important;
+}
+
 .nav-link {
     background-color: var(--color-primary) !important;
     border: none !important;
